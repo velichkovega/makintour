@@ -559,3 +559,72 @@ p, a, div, span {
         font-size: 18px;
     }
 }
+
+@media (max-width: 768px) {
+    .header__info-login {
+        display: none;
+    }
+
+    .section-one__title {
+        font-size: 18px;
+    }
+
+    .section-one__title:after {
+        margin: 0 auto;
+    }
+
+    .section-one__sub-title {
+        font-size: 14px;
+    }
+
+    .section-fifth_big__item h1 {
+        font-size: 18px;
+    }
+
+    .item__hover p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .info__button {
+        margin: 0;
+        width: 148px;
+        height: 30px;
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .section-two__ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slick__info p {
+        padding-bottom: 24px;
+    }
+
+    .header .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-fifth_big {
+        width: 100%;
+    }
+
+    .secton-four .container {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .section-four__title p {
+        margin-bottom: 10px;
+    }
+}
