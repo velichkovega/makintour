@@ -10,7 +10,3 @@
 var screenwidth = screen.width;
 
 
-console.log(screenwidth)
-
-
-//= partials/app.js
