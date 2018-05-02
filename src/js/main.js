@@ -26,3 +26,7 @@ $(document).on('click','.burger',function() {
         left: '0'
     }, 200);
 });
+
+$('.load-more').on('click', function() {
+    $('.section-fifth_big').removeClass('disable');
+})

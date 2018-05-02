@@ -37,6 +37,25 @@ p, a, div, span {
     font-family: 'PT Sans Narrow';
 }
 
+.disable {
+    display: none;
+}
+
+.load-more {
+    cursor: pointer;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info__button {
+        border-color: #000;
+        a {
+            color: #000;
+        }
+    }
+}
+
+
 .burger {
     position: absolute;
     right: 0;
