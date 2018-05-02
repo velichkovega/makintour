@@ -37,12 +37,55 @@ p, a, div, span {
     font-family: 'PT Sans Narrow';
 }
 
+.burger {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin-top: 8px;
+}
+
+.hide-menu {
+    left: -185px;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    background-color: #000;
+    z-index: 999;
+}
+
+.hide-menu__ul {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+}
+
+.close__hide-menu {
+    position: absolute;
+    right: 0;
+}
+
+.hide-menu__item {
+    padding: 7px 0;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
 .container {
     width: 1033px;
     margin: 0 auto;
 }
 
 .header {
+    position: relative;
     height: 44px;
 }
 
@@ -273,6 +316,9 @@ p, a, div, span {
 }
 
 .slick__info {
+    .views-data {
+        padding-top: 212px;
+    }
     p {
         color: #fffefe;
         font-size: 15px;
@@ -469,6 +515,7 @@ p, a, div, span {
             margin: 0;
         }
         p {
+            margin-top: 4px;
             font-size: 16px;
             line-height: 16px;
         }
@@ -485,6 +532,9 @@ p, a, div, span {
 
 
 @media (max-width: 1024px) {
+    .burger {
+        display: block;
+    }
     .container {
         width: 90%;
         margin: 0 auto;
@@ -561,8 +611,17 @@ p, a, div, span {
 }
 
 @media (max-width: 768px) {
+    .info-login__leng {
+        padding-right: 30px;
+    }
+    
     .header__info-login {
-        display: none;
+        .info-login__phone {
+            display: none;
+        }
+        .info-login__sing-in {
+            display: none;
+        }
     }
 
     .section-one__title {
@@ -597,11 +656,18 @@ p, a, div, span {
 }
 
 @media (max-width: 480px) {
+    .section-two__item {
+        margin: 7px 0;
+    }
+    .info-login__location {
+        display: none;
+    }
     .container {
         width: 95%;
     }
 
     .section-two__ul {
+        padding: 10px 0;
         flex-direction: column;
         align-items: center;
     }
@@ -627,4 +693,8 @@ p, a, div, span {
     .section-four__title p {
         margin-bottom: 10px;
     }
+}
+
+.slick-list {
+    height: 502px !important;
 }
